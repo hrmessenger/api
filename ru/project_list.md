@@ -13,30 +13,21 @@
 	"items":[
 		{
 	      "id": 6459,
-	      "title": "Кассир-продавец 21",
-	      "user_name": "service.candidates",
-	      "user_email": "service.candidates",
-	      "company": "Almat inc.",
-	      "city_title": "Алматы",
-	      "city_timezone": "Asia/Almaty"
+	      "title": "Кассир-продовец",
+	      "user_name": "Иван Иванович",
+	      "user_email": "user@example.com",
+	      "company": "Example inc.",
+	      "city_title": "Москва",
+	      "city_timezone": "Europe/Moscow"
 	    },
 	    {
-	      "id": 6458,
-	      "title": "Кассир-продавец 21",
-	      "user_name": "service.candidates",
-	      "user_email": "service.candidates",
-	      "company": "Almat inc.",
-	      "city_title": "Алматы",
-	      "city_timezone": "Asia/Almaty"
-	    },
-	    {
-	      "id": 6457,
-	      "title": "Кассир-продавец 21",
-	      "user_name": "service.candidates",
-	      "user_email": "service.candidates",
-	      "company": "Almat inc.",
-	      "city_title": "Алматы",
-	      "city_timezone": "Asia/Almaty"
+	      "id": 6460,
+	      "title": "Менеджер по продажам",
+	      "user_name": "Иван Иванович",
+	      "user_email": "user@example.com",
+	      "company": "Example inc.",
+	      "city_title": "Москва",
+	      "city_timezone": "Europe/Moscow"
 	    }
 	]
 }
