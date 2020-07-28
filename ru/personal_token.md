@@ -16,7 +16,7 @@
 
 ```http
 GET /me HTTP/1.1
-User-Agent: App/1.0 (incaseoffire@example.com)
+User-Agent: App/1.0 (in_case_of_fire@example.com)
 Host: api.huntflow.ru
 Accept: */*
 Authorization: Bearer <personal_token>
