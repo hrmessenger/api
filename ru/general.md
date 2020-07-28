@@ -1,6 +1,6 @@
 # Общая информация
 
-+ API работает по протоколу HTTPS
++ Всё API работает по протоколу HTTPS
 + Авторизация осуществляется по персональному токену
 + Все данные доступны только в формате JSON
 + Базовый URL — `https://api.hrmessenger.com`
@@ -16,7 +16,7 @@
 необходимости.
 
 ```
-User-Agent: App/1.0 (incaseoffire@example.com)
+User-Agent: Application/1.0 (in_case_of_fire@example.com)
 ```
 
 <a name="request_body"></a>
@@ -74,6 +74,5 @@ API широко использует информирование при пом
 * [HTTP/1.1](http://tools.ietf.org/html/rfc2616)
 * [JSON](http://json.org/)
 * [URI Template](http://tools.ietf.org/html/rfc6570)
-* [OAuth 2.0](http://tools.ietf.org/html/rfc6749)
 * [REST](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 * [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601)
