@@ -1,1 +1,1 @@
-`POST api.hrmessenger.com/v1/respondents/{response_id}`
+`GET api.hrmessenger.com/v1/responses/{response_id}`
