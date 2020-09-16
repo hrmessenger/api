@@ -4,32 +4,58 @@
 
 Принимаемые параметры:
 
-* `mine` - логическое поле. Если передается, то вернутся только проекты, над которыми работает текущий пользователь.
-
 * `page`, `pageSize` - параметры постраничного вывода
 
 ```
 {
-	"items":[
-		{
-	      "id": 6459,
-	      "title": "Кассир-продовец",
-	      "user_name": "Иван Иванович",
-	      "user_email": "user@example.com",
-	      "company": "Example inc.",
-	      "city_title": "Москва",
-	      "city_timezone": "Europe/Moscow"
-	    },
-	    {
-	      "id": 6460,
-	      "title": "Менеджер по продажам",
-	      "user_name": "Иван Иванович",
-	      "user_email": "user@example.com",
-	      "company": "Example inc.",
-	      "city_title": "Москва",
-	      "city_timezone": "Europe/Moscow"
-	    }
-	]
+	"status": "success",
+	"code": 200,
+	"message": "OK",
+	"data": {
+		"page": 1,
+		"pageSize": 20,
+		"items":[
+			{
+		      "id": 111,
+		      "title": "Project 1 Title",
+		      "status": 0,
+		      "user": {
+		        "name": "User Name",
+		        "lastName": "User Last Name",
+		        "username": "example@example.com"
+		      },
+		      "city": {
+		        "id": 222,
+		        "title": "Алматы",
+		        "timezone": "Asia/Almaty"
+		      },
+		      "binded": true,
+		      "vacancy": {
+		      	"id": "ID of your vacancy",
+		      	"vacancy": "Title of vacancy",
+		      	"link": "Link to vacancy",
+		      	"details": ["detail1", "detail2", "detail3"]
+		      }
+		    },
+		    {
+		      "id": 112,
+		      "title": "Project 2 Title",
+		      "status": 0,
+		      "user": {
+		        "name": "User Name",
+		        "lastName": "User Last Name",
+		        "username": "example@example.com"
+		      },
+		      "city": {
+		        "id": 222,
+		        "title": "Алматы",
+		        "timezone": "Asia/Almaty"
+		      },
+		      "binded": false,
+		      "vacancy": {}
+		    }
+		]
+	}
 }
 ```
 
@@ -38,11 +64,20 @@
 --- | --- | ---
 id | number | ID проекта
 title | string | Название проекта
-user_name | string | Имя менеджера проекта
-user_email | string | E-mail менеджера проекта
-company | string | Название компании
-city_title | string | Название города проекта
-city_timezone | string | Таймзона проекта
+user.name | string | Имя менеджера проекта
+user.lastName | string | Фамилия менеджера проекта
+user.email | string | Аккаунт менеджера проекта
+city.id | number | ID города в справочнике
+city.title | string | Название города проекта
+city.timezone | string | Таймзона города
+binded | boolean | Создана ли связь с вакансией
+vacancy.id | number | ID вакансии в вашей системе, с которой связан проект
+vacancy.vacancy | string | Название вакансии
+vacancy.link | string | Ссылка на вакансию
+vacancy.details | array | Массив из 3 (макс) элементов с дополнительныи данными
+
+
+Данные объекта vacancy формулируются при создании связи проект-вакансия и полностью дублируют ту же информацию.
 
 
 
