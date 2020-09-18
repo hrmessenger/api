@@ -1,1 +1,0 @@
-`GET api.hrmessenger.com/v1/responses/{response_id}`
